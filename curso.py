@@ -4,8 +4,8 @@ import smtplib
 import time
 
 cyber = 'https://store.steampowered.com/app/1091500/Cyberpunk_2077/' # Jogo sem desconto
-wolf = 'https://store.steampowered.com/app/1056960/Wolfenstein_Youngblood/' # Jogo com desconto
-insur = 'https://store.steampowered.com/app/581320/Insurgency_Sandstorm/'
+wolf = 'https://store.steampowered.com/app/1056960/Wolfenstein_Youngblood/' # Jogo com desconto (2)
+insur = 'https://store.steampowered.com/app/581320/Insurgency_Sandstorm/' # Jogo com desconto (1)
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36'} # Estamos informando ao site que somos um navegador 
 cookies = {'birthtime': '568022401', 'mature_content': '1'} # Estamos informando ao site que temos mais que 18 anos e podemos pular as telas de verificação de idade da Steam
@@ -67,5 +67,4 @@ while(True):
 
     checkPrice(games)
     time.sleep(3600) # O programa irá rodar a cada 1h (3600s)
-
 
